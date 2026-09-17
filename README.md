@@ -18,6 +18,7 @@ Projeto de treino para manipulação de dados brutos em JavaScript puro, sem bib
 | Caminho | Descrição |
 |---|---|
 | `data/pib.csv` | Dataset bruto de PIB per capita por país (Banco Mundial, indicador `NY.GDP.PCAP.CD`), em formato CSV original, sem nenhum tratamento |
+| `src/parser.js` | Leitura do CSV e parser de linha, tratando corretamente campos entre aspas que contêm vírgula (ex: `"Bahamas, The"`) |
 
 ## ⚙️ Tecnologias usadas
 
@@ -26,11 +27,17 @@ Projeto de treino para manipulação de dados brutos em JavaScript puro, sem bib
 
 ## 🚀 Como rodar
 
-Ainda não há lógica de execução neste estágio do projeto — apenas o dataset bruto foi adicionado, como ponto de partida para o desenvolvimento do parser.
+```bash
+node src/parser.js
+```
+
+Neste estágio, o script lê o dataset bruto e imprime no console o resultado do parsing de cada linha (país) já convertido em array de campos limpos, sem aspas e com as vírgulas internas preservadas corretamente.
 
 ## ✨ Funcionalidades
 
-- [ ] Converter o CSV bruto em uma estrutura de dados manipulável (JSON)
+- [x] Ler o CSV bruto e separar em linhas
+- [x] Fazer o parsing de cada linha respeitando aspas (evitando quebrar campos com vírgula interna)
+- [ ] Converter cada linha em objeto (chave/valor a partir do header)
 - [ ] Aplicar filtros e agregações sobre os dados (ex: PIB médio por país/ano)
 - [ ] Cobrir a lógica com testes automatizados (Vitest)
 
