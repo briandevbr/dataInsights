@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 data_insights
+# 📊 dataInsights
 
 > 🌐 Read this in [English](./README.en.md)
 
@@ -19,6 +19,7 @@ Projeto de treino para manipulação de dados brutos em JavaScript puro, sem bib
 ## 📑 Sumário
 
 - [🗂️ Estrutura do Projeto](#️-estrutura-do-projeto)
+- [🗂️ Estrutura do Projeto - tree](#️-estrutura-do-projeto---tree)
 - [📦 O dataset](#-o-dataset)
 - [🔄 Como funciona](#-como-funciona)
 - [⚙️ Tecnologias usadas](#️-tecnologias-usadas)
@@ -33,10 +34,25 @@ Projeto de treino para manipulação de dados brutos em JavaScript puro, sem bib
 
 | Caminho | Descrição |
 |---|---|
-| `data/pib.csv` | Dataset bruto de PIB per capita por país (Banco Mundial, indicador `NY.GDP.PCAP.CD`), em formato CSV original, sem nenhum tratamento |
+| `data/pib.csv` | Dataset bruto de PIB per capita por país ([Banco Mundial](https://databank.worldbank.org/source/world-development-indicators), indicador [`NY.GDP.PCAP.CD`](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)), em formato CSV original, sem nenhum tratamento |
 | `src/parser.js` | Leitura do CSV e parser de linha, tratando corretamente campos entre aspas que contêm vírgula (ex: `"Bahamas, The"`) |
 | `README.en.md` | Versão em inglês desta documentação |
 | `LICENSE` | Texto da licença MIT |
+
+---
+
+## 🗂️ Estrutura do Projeto - tree
+
+```
+🗂️
+├── 📁 data
+│  └── 📈 pib.csv
+├── 📁 src
+│  └── ⚙️ parser.js
+├── 🗒️ LICENSE
+├── 🇺🇸 README.en.md
+└── 🇧🇷 README.md
+```
 
 ---
 
@@ -44,8 +60,8 @@ Projeto de treino para manipulação de dados brutos em JavaScript puro, sem bib
 
 | | |
 |---|---|
-| **Fonte** | Banco Mundial — World Development Indicators |
-| **Indicador** | PIB per capita em US$ correntes (`NY.GDP.PCAP.CD`) |
+| **Fonte** | [Banco Mundial — World Development Indicators](https://databank.worldbank.org/source/world-development-indicators) |
+| **Indicador** | [PIB per capita em US$ correntes (`NY.GDP.PCAP.CD`)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD) |
 | **Cobertura** | 265 linhas de dados: países e agregados regionais (ex: *Africa Eastern and Southern*) |
 | **Período** | 1960 a 2025, uma coluna por ano |
 | **Última atualização** | 2026-07-13 |
