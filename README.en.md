@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 data_insights
+# 📊 dataInsights
 
 > 🌐 Leia em [Português](./README.md)
 
@@ -19,6 +19,7 @@ A training project for manipulating raw data in plain JavaScript, with no extern
 ## 📑 Table of Contents
 
 - [🗂️ Project Structure](#️-project-structure)
+- [🗂️ Project Structure - tree](#️-project-structure---tree)
 - [📦 The dataset](#-the-dataset)
 - [🔄 How it works](#-how-it-works)
 - [⚙️ Technologies used](#️-technologies-used)
@@ -33,10 +34,25 @@ A training project for manipulating raw data in plain JavaScript, with no extern
 
 | Path | Description |
 |---|---|
-| `data/pib.csv` | Raw GDP per capita dataset by country (World Bank, indicator `NY.GDP.PCAP.CD`), in original CSV format, with no processing applied |
+| `data/pib.csv` | Raw GDP per capita dataset by country ([World Bank](https://databank.worldbank.org/source/world-development-indicators), indicator [`NY.GDP.PCAP.CD`](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)), in original CSV format, with no processing applied |
 | `src/parser.js` | Reads the CSV and parses each line, correctly handling quoted fields that contain commas (e.g. `"Bahamas, The"`) |
 | `README.en.md` | English version of this documentation |
 | `LICENSE` | MIT license text |
+
+---
+
+## 🗂️ Project Structure - tree
+
+```
+🗂️
+├── 📁 data
+│  └── 📈 pib.csv
+├── 📁 src
+│  └── ⚙️ parser.js
+├── 🗒️ LICENSE
+├── 🇺🇸 README.en.md
+└── 🇧🇷 README.md
+```
 
 ---
 
@@ -44,8 +60,8 @@ A training project for manipulating raw data in plain JavaScript, with no extern
 
 | | |
 |---|---|
-| **Source** | World Bank — World Development Indicators |
-| **Indicator** | GDP per capita in current US$ (`NY.GDP.PCAP.CD`) |
+| **Source** | [World Bank — World Development Indicators](https://databank.worldbank.org/source/world-development-indicators) |
+| **Indicator** | [GDP per capita in current US$ (`NY.GDP.PCAP.CD`)](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD) |
 | **Coverage** | 265 data rows: countries and regional aggregates (e.g. *Africa Eastern and Southern*) |
 | **Period** | 1960 to 2025, one column per year |
 | **Last updated** | 2026-07-13 |
