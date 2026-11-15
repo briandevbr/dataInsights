@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="170" viewBox="0 0 720 170" role="img" aria-labelledby="t">
+<title id="t">dataInsights: CSV bruto → JavaScript puro → insights. Parser escrito do zero, sem bibliotecas. Próximo: filtros, agregações e testes.</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#142545"/>
+  </linearGradient>
+  <linearGradient id="cor-barra" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2F81F7"/><stop offset="1" stop-color="#2F81F7" stop-opacity=".15"/>
+  </linearGradient>
+  <clipPath id="frame"><rect width="720" height="170" rx="14"/></clipPath>
+</defs>
+<style>
+  .barra { fill: url(#cor-barra); opacity: .55; transform-box: fill-box; transform-origin: bottom; animation: barra 4s ease-in-out infinite; }
+  @keyframes barra { 0%, 100% { transform: scaleY(.55); } 50% { transform: scaleY(1); } }
+  .csv { font: 500 12px 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #5d7bb0; opacity: .8; }
+  .trilho { animation: corre 16s linear infinite; }
+  @keyframes corre { from { transform: translateX(0); } to { transform: translateX(-580px); } }
+  .msg { font: 700 21px 'Fira Code', 'JetBrains Mono', 'Cascadia Code', Consolas, 'Courier New', monospace; fill: #8CB9FF;
+         stroke: #0b1220; stroke-width: 5px; paint-order: stroke fill; opacity: 0; animation: msg 9s infinite; }
+  .m2 { animation-delay: 3s; } .m3 { animation-delay: 6s; }
+  @keyframes msg { 0% { opacity: 0; transform: translateY(8px); } 5% { opacity: 1; transform: translateY(0); }
+                   28% { opacity: 1; transform: translateY(0); } 33% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .barra, .trilho, .msg { animation: none; }
+    .m1 { opacity: 1; }
+  }
+</style>
+<g clip-path="url(#frame)">
+  <rect width="720" height="170" fill="url(#bg)"/>
+  <rect class="barra" x="22" y="138.4" width="22" height="21.6" rx="3" style="animation-delay:-4.00s"/><rect class="barra" x="53" y="138.2" width="22" height="21.8" rx="3" style="animation-delay:-3.84s"/><rect class="barra" x="84" y="137.5" width="22" height="22.5" rx="3" style="animation-delay:-3.68s"/><rect class="barra" x="115" y="136.9" width="22" height="23.1" rx="3" style="animation-delay:-3.52s"/><rect class="barra" x="146" y="134.3" width="22" height="25.7" rx="3" style="animation-delay:-3.36s"/><rect class="barra" x="177" y="130.2" width="22" height="29.8" rx="3" style="animation-delay:-3.20s"/><rect class="barra" x="208" y="126.9" width="22" height="33.1" rx="3" style="animation-delay:-3.04s"/><rect class="barra" x="239" y="125.0" width="22" height="35.0" rx="3" style="animation-delay:-2.88s"/><rect class="barra" x="270" y="129.1" width="22" height="30.9" rx="3" style="animation-delay:-2.72s"/><rect class="barra" x="301" y="125.0" width="22" height="35.0" rx="3" style="animation-delay:-2.56s"/><rect class="barra" x="332" y="124.1" width="22" height="35.9" rx="3" style="animation-delay:-2.40s"/><rect class="barra" x="363" y="116.8" width="22" height="43.2" rx="3" style="animation-delay:-2.24s"/><rect class="barra" x="394" y="102.8" width="22" height="57.2" rx="3" style="animation-delay:-2.08s"/><rect class="barra" x="425" y="113.5" width="22" height="46.5" rx="3" style="animation-delay:-1.92s"/><rect class="barra" x="456" y="118.3" width="22" height="41.7" rx="3" style="animation-delay:-1.76s"/><rect class="barra" x="487" y="98.3" width="22" height="61.7" rx="3" style="animation-delay:-1.60s"/><rect class="barra" x="518" y="79.0" width="22" height="81.0" rx="3" style="animation-delay:-1.44s"/><rect class="barra" x="549" y="52.0" width="22" height="108.0" rx="3" style="animation-delay:-1.28s"/><rect class="barra" x="580" y="77.2" width="22" height="82.8" rx="3" style="animation-delay:-1.12s"/><rect class="barra" x="611" y="74.6" width="22" height="85.4" rx="3" style="animation-delay:-0.96s"/><rect class="barra" x="642" y="84.0" width="22" height="76.0" rx="3" style="animation-delay:-0.80s"/><rect class="barra" x="673" y="67.5" width="22" height="92.5" rx="3" style="animation-delay:-0.64s"/>
+  <g class="trilho"><text class="csv" x="0" y="24">"Bahamas, The","BHS","GDP per capita (current US$)","NY.GDP.PCAP.CD",</text><text class="csv" x="580" y="24">"Bahamas, The","BHS","GDP per capita (current US$)","NY.GDP.PCAP.CD",</text><text class="csv" x="1160" y="24">"Bahamas, The","BHS","GDP per capita (current US$)","NY.GDP.PCAP.CD",</text></g>
+  <text class="msg m1" x="360" y="92" text-anchor="middle">CSV bruto → JavaScript puro → insights</text>
+  <text class="msg m2" x="360" y="92" text-anchor="middle">Parser escrito do zero, sem bibliotecas</text>
+  <text class="msg m3" x="360" y="92" text-anchor="middle">Próximo: filtros, agregações e testes</text>
+</g>
+</svg>
